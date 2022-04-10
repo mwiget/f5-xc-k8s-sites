@@ -5,6 +5,6 @@ include "root" {
 terraform {
   after_hook "kubeconfig" {
     commands = ["apply"]
-      execute  = ["./create_kubeconfig.sh"]
+      execute  = ["./create_site.sh"]
   }
 }
