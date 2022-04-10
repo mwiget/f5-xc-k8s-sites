@@ -1,0 +1,34 @@
+terraform {
+  extra_arguments "volterra" {
+    commands = ["apply","plan","destroy"]
+      arguments = []
+      env_vars = {
+        VES_P12_PASSWORD  = "......"
+
+# prod
+# VOLT_API_URL     = "https://playground.console.ves.volterra.io/api"
+# VOLT_API_P12_FILE = "<path to api-creds.p12>"
+# VOLTERRA_TOKEN    = "............................"
+
+          VOLT_API_TIMEOUT  = "60s"
+
+# staging
+          VOLT_API_URL     = "https://playground.staging.volterra.us/api"
+          VOLT_API_P12_FILE = "<path to api-creds.p12>"
+          VOLT_API_CA_CERT  = "<path to public_server_ca.crt>"
+          VOLTERRA_TOKEN    = "JTQkfv6Qiy56/jMAPL+avwbVwy4="
+      }
+  }
+}
+
+inputs = {
+  gke_project_id  = "...................."
+  gke_region      = "us-central1"
+  gke_num_nodes   = 1     # number of nodes per zone
+
+  aks_appId       = "........-....-....-....-............"
+  aks_password    = ".................................."
+  aks_num_nodes   = 3     # total number of nodes
+
+  volterraTenant  = ".........."
+}
