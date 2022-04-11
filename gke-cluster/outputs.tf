@@ -17,3 +17,8 @@ output "kubernetes_cluster_host" {
   value       = google_container_cluster.primary.endpoint
   description = "GKE Cluster Host"
 }
+
+output "f5xc_site_token" {
+  value       = var.f5xc_site_token
+  description = "F5XC registration site token"
+}

@@ -10,7 +10,7 @@ sed -i "s/<cluster name>/$CLUSTER_NAME/" ce_k8s.yml
 sed -i "s/<latitude>/50.0/" ce_k8s.yml
 sed -i "s/<longitude>/12.0/" ce_k8s.yml
 sed -i "s/<token>/$SITE_TOKEN/" ce_k8s.yml
-sed -i "s/\.io$/.us/" ce_k8s.yml
+sed -i "s/volterra\.io$/volterra.us/" ce_k8s.yml
 sed -i "s/\.ves\./.staging./" ce_k8s.yml
 ./create_kubeconfig.sh
 kubectl apply -f ce_k8s.yml
