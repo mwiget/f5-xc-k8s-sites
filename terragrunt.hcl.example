@@ -31,4 +31,5 @@ inputs = {
   aks_num_nodes   = 3     # total number of nodes
 
   volterraTenant  = ".........."
+  f5xc_site_token = "........-....-....-....-............"
 }

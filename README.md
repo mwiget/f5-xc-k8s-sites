@@ -21,6 +21,11 @@ the infos from the terragrunt.hcl and terraform output, creates kubeconfig and f
 
 Once deployed, go to the F5 XC Console and accept the pending registration requests. 
 
+## Site Mesh
+
+Optionally, one can deploy external lb in each site, then set the external LB IP address via F5XC Console to the site 
+config, set a label in each site to make it part of a virtual site and select that virtual site in a site mesh group.
+
 ## Destroy
 
 ```
