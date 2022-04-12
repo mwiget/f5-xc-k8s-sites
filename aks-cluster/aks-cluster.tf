@@ -25,11 +25,6 @@ resource "azurerm_kubernetes_cluster" "default" {
     os_disk_size_gb = 30
   }
 
-  #service_principal {
-  #  client_id     = var.aks_appId
-  #  client_secret = var.aks_password
-  #}
-
   identity {
     type = "SystemAssigned"
   }
@@ -40,6 +35,6 @@ resource "azurerm_kubernetes_cluster" "default" {
   #}
 
   tags = {
-    environment = "m.wiget@f5.com"
+    environment = "demo"
   }
 }

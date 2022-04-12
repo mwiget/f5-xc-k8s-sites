@@ -26,8 +26,6 @@ inputs = {
   gke_region      = "us-central1"
   gke_num_nodes   = 1     # number of nodes per zone
 
-  aks_appId       = "........-....-....-....-............"
-  aks_password    = ".................................."
   aks_num_nodes   = 3     # total number of nodes
 
   volterraTenant  = ".........."
