@@ -14,9 +14,10 @@ sed -i "s/volterra\.io$/volterra.us/" ce_k8s.yml
 sed -i "s/\.ves\./.staging./" ce_k8s.yml
 sed -i "s/replicas: 1/replicas: 3/" ce_k8s.yml
 
-linenr=$(grep -in 'SITE ACCESS VIA NODEPORT' ce_k8s.yml | cut -d: -f1)
-linenr=$(($linenr+1))
-echo "enablind NodePort (uncomment line $linenr onwards) ..."
-sed -i "$linenr,\$s/^#//" ce_k8s.yml
+#linenr=$(grep -in 'SITE ACCESS VIA NODEPORT' ce_k8s.yml | cut -d: -f1)
+#linenr=$(($linenr+1))
+#echo "enablind NodePort (uncomment line $linenr onwards) ..."
+#sed -i "$linenr,\$s/^#//" ce_k8s.yml
+
 ./create_kubeconfig.sh
 kubectl --kubeconfig kubeconfig apply -f ce_k8s.yml

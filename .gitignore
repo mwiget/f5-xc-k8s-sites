@@ -3,7 +3,6 @@
 *.bak
 *.json
 kubeconfig
-terragrunt.hcl
 ce_k8s.yml
 
 # Local .terraform directories
