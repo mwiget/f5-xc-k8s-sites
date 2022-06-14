@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ../gke-cluster
-while ! kubectl --kubeconfig kubeconfig get pods -n ves-system; do
+while [ $(kubectl --kubeconfig kubeconfig get pods -n ves-system|grep vp-manager-|wc -l) -ne 3 ] ; do
   echo "waiting for gke-cluster ..."
   sleep 1
 done
