@@ -2,7 +2,7 @@ include "root" {
   path = find_in_parent_folders()
 }
 
-dependency "gke-cluster" {
+dependency "cluster" {
     config_path = "../gke-cluster"
     mock_outputs = {
       cluster_name = "dummy"
