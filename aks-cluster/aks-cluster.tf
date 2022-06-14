@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "default" {
   name     = "${var.projectPrefix}-rg"
-  location = "West US 2"
+  location = var.aks_region
 
   tags = {
     environment = "Demo"
@@ -16,7 +16,6 @@ resource "azurerm_kubernetes_cluster" "default" {
   default_node_pool {
     name            = "default"
     node_count      = var.aks_num_nodes
-#    vm_size         = "Standard_D4_v5"   # 4 vcpu 16 GB, not working for me
 #    vm_size         = "Standard_DC4s_v2"  # 4 vcpu, 16 GB
 #    vm_size         = "Standard_DC2s_v2"  # 2 vcpu, 8 GB
     vm_size         = "Standard_D3_v2"  # 4 vcpu, 14 GB

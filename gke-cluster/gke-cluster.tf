@@ -47,7 +47,7 @@ resource "google_container_node_pool" "primary_nodes" {
     }
 
     # preemptible  = true
-    machine_type = "e2-standard-4"
+    machine_type = "e2-standard-4"    # 4 cores, 16 GB RAM
     tags         = ["gke-node", "${var.gke_project_id}-gke"]
     metadata = {
       disable-legacy-endpoints = "true"

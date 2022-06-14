@@ -3,6 +3,8 @@ variable "projectPrefix" {
   default = null
 }
 
+variable "aks_region" {}
+
 variable "aks_num_nodes" {
   description = "Azure Kubernetes node_count"
 }
