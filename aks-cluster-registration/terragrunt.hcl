@@ -9,7 +9,7 @@ dependencies {
 dependency "cluster" {
     config_path = "../aks-cluster"
     mock_outputs = {
-      cluster_name = "dummy"
+      kubernetes_cluster_name = "dummy"
     }
 }
 

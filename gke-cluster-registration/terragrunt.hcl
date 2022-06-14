@@ -2,10 +2,14 @@ include "root" {
   path = find_in_parent_folders()
 }
 
+dependencies {
+      paths = ["../gke-cluster"]
+}
+
 dependency "cluster" {
     config_path = "../gke-cluster"
     mock_outputs = {
-      cluster_name = "dummy"
+      kubernetes_cluster_name = "dummy"
     }
 }
 
