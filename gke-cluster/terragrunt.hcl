@@ -7,4 +7,8 @@ terraform {
     commands = ["apply"]
       execute  = ["./create_site.sh"]
   }
+  before_hook "remove ce" {
+    commands = ["destroy"]
+    execute  = ["./delete_site.sh"]
+  }
 }

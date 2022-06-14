@@ -1,0 +1,3 @@
+provider "volterra" {
+    # Configuration options
+}
