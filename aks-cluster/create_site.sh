@@ -20,4 +20,4 @@ sed -i "s/replicas: 1/replicas: 3/" ce_k8s.yml
 #sed -i "$linenr,\$s/^#//" ce_k8s.yml
 
 ./create_kubeconfig.sh
-kubectl apply -f ce_k8s.yml
+kubectl --kubeconfig kubeconfig apply -f ce_k8s.yml

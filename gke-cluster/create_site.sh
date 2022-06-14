@@ -19,4 +19,4 @@ linenr=$(($linenr+1))
 echo "enablind NodePort (uncomment line $linenr onwards) ..."
 sed -i "$linenr,\$s/^#//" ce_k8s.yml
 ./create_kubeconfig.sh
-kubectl apply -f ce_k8s.yml
+kubectl --kubeconfig kubeconfig apply -f ce_k8s.yml
