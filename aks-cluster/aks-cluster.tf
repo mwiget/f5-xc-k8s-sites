@@ -20,6 +20,7 @@ resource "azurerm_kubernetes_cluster" "default" {
 #    vm_size         = "Standard_DC2s_v2"  # 2 vcpu, 8 GB
     vm_size         = "Standard_D3_v2"  # 4 vcpu, 14 GB
     os_disk_size_gb = 30
+#    enable_node_public_ip = true
   }
 
   identity {

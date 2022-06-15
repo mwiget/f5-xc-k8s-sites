@@ -21,3 +21,4 @@ sed -i "s/replicas: 1/replicas: 3/" ce_k8s.yml
 
 ./create_kubeconfig.sh
 kubectl --kubeconfig kubeconfig apply -f ce_k8s.yml
+kubectl --kubeconfig kubeconfig apply -f lb.yml
