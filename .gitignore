@@ -2,7 +2,7 @@
 *tfstate*
 *.bak
 *.json
-kubeconfig
+kubeconfig*
 ce_k8s.yml
 
 # Local .terraform directories
