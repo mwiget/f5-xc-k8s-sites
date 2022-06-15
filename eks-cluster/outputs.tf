@@ -32,3 +32,9 @@ output "cluster_name" {
   description = "Kubernetes Cluster Name"
   value       = local.cluster_name
 }
+
+output "f5xc_site_token" {
+  value       = var.f5xc_site_token
+  description = "F5XC registration site token"
+}
+
