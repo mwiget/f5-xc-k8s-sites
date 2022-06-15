@@ -1,4 +1,9 @@
 
+
+```
+$ gcloud auth application-default login
+```
+
 ```
 $ terragrunt init
 $ terragrunt apply
