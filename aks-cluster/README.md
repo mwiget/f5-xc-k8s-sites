@@ -4,6 +4,7 @@
 - https://learn.hashicorp.com/tutorials/terraform/aks
 - git clone https://github.com/hashicorp/learn-terraform-provision-aks-cluster
 - https://learnk8s.io/terraform-aks
+- discussion on security groups for nodeip: https://github.com/hashicorp/terraform-provider-azurerm/issues/10233
 
 
 ```
