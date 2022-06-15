@@ -1,11 +1,3 @@
-variable "gke_project_id" {
-  description = "project id"
-}
-
-variable "gke_region" {
-  description = "region"
-}
-
 # VPC
 resource "google_compute_network" "vpc" {
   name                    = "${var.gke_project_id}-vpc"
