@@ -1,0 +1,2 @@
+- need to set cluster-name to include projectPrefix
+- need to increase cpu count on worker nodes to 4 cpus!
