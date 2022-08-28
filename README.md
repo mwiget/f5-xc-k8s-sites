@@ -10,7 +10,7 @@ the kubectl template https://gitlab.com/volterra.io/volterra-ce/-/tree/master/k8
 
 ## Deploy
 
-Adjust parameters in [terragrunt.hcl](terragrunt.hcl), then deploy via
+Copy [terragrunt.hcl.example](terragrunt.hcl.example) to terragrunt.hcl and adjust parameters, then deploy via
 
 ```
 $ terragrunt run-all apply
